@@ -135,3 +135,7 @@
     cursor: pointer;
   }
 }
+
+.prose-dark {
+  @apply prose prose-invert prose-headings:tracking-tight prose-headings:text-foreground prose-p:text-muted-foreground prose-p:leading-relaxed prose-a:text-primary;
+}

@@ -6,6 +6,7 @@ import Navbar from "@/components/nav-bar";
 import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
 import { extractRouterConfig } from "uploadthing/server";
 import { ourFileRouter } from "./api/uploadthing/core";
+import { Footer } from "@/components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -49,6 +50,7 @@ export default function RootLayout({
             routerConfig={extractRouterConfig(ourFileRouter)}
           />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
