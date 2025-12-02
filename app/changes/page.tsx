@@ -1,8 +1,12 @@
+import HeroSection from "@/components/HeroSection";
 import React from "react";
+const MiniCodeco = '/mini-codeco.svg';
+const Success2 = '/success2.svg';
 
 export default function page() {
   return (
     <div>
+      <HeroSection />
       <article className="prose-dark line-clamp-2 space-y-100 p-8 prose prose-lg prose-slate mx-auto">
         <h1>Ultra GOAT landing</h1>
         <p className="line-clamp-1">Body copy that stays readable in both light and dark.</p>
