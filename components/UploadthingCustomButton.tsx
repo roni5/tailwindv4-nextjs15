@@ -4,15 +4,15 @@ import Image from "next/image";
 import React, { useState } from "react";
 
 export default function UploadthingCustomButton() {
-  const [imageUrl, setImageUrl] = useState("/bg.png");
+  const [imageUrl, setImageUrl] = useState("/green-pastel.webp");
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 ">
       <Image
         src={imageUrl}
         alt="This is hero image"
         width={826}
         height={556}
-        className="w-1/2"
+        className="w-1/2 [box-shadow:inset_0_-1px_0_0_rgba(22,27,59,0.04)] rounded-md"
       />
       <UploadButton
         endpoint="imageUploader"
